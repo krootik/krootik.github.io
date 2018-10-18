@@ -1,0 +1,6 @@
+[project]
+name = knivesberegovogo
+locale = ru_RU
+[servers.ghpages]
+target = ghpages://krootik/krootik.github.io
+

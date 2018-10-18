@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  
+<!-- About Section -->
+
+<section id="about">
+    <div class="container">
+         <div class="row">
+
+              <div class="col-md-offset-1 col-md-10 col-sm-12">
+                   
+                   <div class="col-md-8 col-sm-12">
+                    <img src="{{ '../../static/images/about-image.jpg' }}" class="img-responsive" alt="About">
+                   </div>
+                   <div class="col-md-4 col-sm-12">
+                       <div class="section-title">
+                            {{ this.title }}
+                        </div> 
+                    <p>{{ this.body }}</p>
+               </div>
+
+               <div class="clearfix"></div>
+
+              </div>
+
+         </div>
+    </div>
+</section>
+{% endblock %}
