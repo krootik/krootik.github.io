@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.name }} ({{ this.date.year }}){% endblock %}
+{% block title %}{{ this.name }} {% endblock %}
 {% block body %}
   <!-- Single Project Section -->
 
@@ -14,7 +14,7 @@
                         {% if images %}
                             {% for image in images %}
                             <div class="col-md-4 col-sm-4">
-                                    <img src="{{ image|url }}" alt="" class="img-responsive img-rounded">                                        
+                                <a href="{{ image|url }}" data-lightbox="{{ image }}"><img src="{{ image|url }}"  alt="" class="img-responsive img-rounded"></a>                                        
                             </div>       
                             {% endfor %} 
                         {% endif %} 
